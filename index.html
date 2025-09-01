@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta name="1" content="width=device-width, initial-scale=1.0">
     <title>Block-Parkour Redirect</title>
+    <style>
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    body {
+        display: table;
+    }
+
+    .my-block {
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    </style>    
 </head>
+
 <body>
-    This game has been moved.
-    <button onclick="doRedirect()">Click here to redirect</button>
+    <div class="my-block">
+        This game has been moved.
+        <br />
+        <button onclick="doRedirect()">Click here to redirect</button>
+    </div>
 
     <script>
         function doRedirect() {
